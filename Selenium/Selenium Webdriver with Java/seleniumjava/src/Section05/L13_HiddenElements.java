@@ -15,7 +15,12 @@ public class L13_HiddenElements {
 
         driver.get("https://www.automationtesting.co.uk/hiddenElements.html");
 
+        System.out.println(
+            driver.findElement(By.cssSelector(".col-12.col-12-small > p:nth-of-type(2)")).isDisplayed()
+        );
 
-
+        System.out.println(
+            driver.findElement(By.cssSelector(".col-12.col-12-small > p:nth-of-type(3)")).isDisplayed()
+        );
     }
 }
